@@ -4,3 +4,7 @@ porém foi uma ideia interessante de fazer, descobri que nao é tão simples faz
 TELA ADMINISTRATIVA
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/710c0701-886b-4732-9538-c5dfeab7a8bb)
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/27755b17-a39b-4176-8a1d-38ed646e2124)
+
+TELA DOS PRODUTOS
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/2588b278-571e-47a1-9ddc-924988184681)
+
