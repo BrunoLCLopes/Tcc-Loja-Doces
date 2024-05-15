@@ -10,3 +10,11 @@ TELA ADMINISTRATIVA
 TELA DOS PRODUTOS
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/2588b278-571e-47a1-9ddc-924988184681)
 
+Tela Carrinho
+
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/cbbb0acf-d8a3-4604-82f7-e0b78808e94c)
+
+Tela Carrinho Sem nada
+
+
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/51d45a5f-b1a7-4898-953f-d2ca03851c34)
