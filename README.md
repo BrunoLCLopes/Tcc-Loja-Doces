@@ -4,8 +4,10 @@ porém foi uma ideia interessante de fazer, descobri que nao é tão simples faz
 o banco de dados já esta incluso já e eu usei o Wamp64 como Host
 
 TELA ADMINISTRATIVA
-![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/710c0701-886b-4732-9538-c5dfeab7a8bb)
-![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/27755b17-a39b-4176-8a1d-38ed646e2124)
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/82458777-0254-4ddd-a5f8-e4e3fc50dc26)
+
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/5a01fd8b-6220-4591-a380-f4a9340f5e10)
+
 
 TELA DOS PRODUTOS
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/2588b278-571e-47a1-9ddc-924988184681)
