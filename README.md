@@ -13,5 +13,6 @@ TELA DOS PRODUTOS
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/2588b278-571e-47a1-9ddc-924988184681)
 
 Tela Carrinho
-![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/737cd306-6283-42d6-ab9d-13cb59b0b5bd)
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/fcfc53d3-384b-47f1-8534-39d4e8c2cd76)
+
 
