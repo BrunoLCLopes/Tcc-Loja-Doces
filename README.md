@@ -13,7 +13,8 @@ TELA DOS PRODUTOS
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/c2b0793d-f851-4da6-9778-415c747a9bd5)
 
 
-Tela Carrinho
-![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/fcfc53d3-384b-47f1-8534-39d4e8c2cd76)
+Tela Carrinho (com confirmação de envio ao cliente)
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/18f822f0-2655-4c4a-8b5b-2882ed65d107)
+
 
 
