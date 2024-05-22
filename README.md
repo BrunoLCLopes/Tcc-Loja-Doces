@@ -18,10 +18,10 @@ Tela de Carrinho
 Telas Administrativas do Sistema
 
 Tela - LOGIN ADM
-![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/8cab530b-a4bc-4103-bfec-743d0f15924e)
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/afab1724-028b-4ce4-b4a3-ba81f9035aa4)
 
 Tela INDEX ADMIN
-![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/014fdd22-f313-47c8-a154-be40160e2d40)
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/c8fe631d-a2d5-4d96-ab1b-96af24ec27e0)
 
 Listagem de Pedidos
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/df38b8bd-d305-4143-809b-a5d96b64a195)
