@@ -1,33 +1,25 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1:3306
--- Tempo de geração: 18/05/2024 às 05:05
--- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.2.18
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Banco de dados: `bd_lojadoces`
---
-
+-- --------------------------------------------------------
+-- Servidor:                     127.0.0.1
+-- Versão do servidor:           10.4.32-MariaDB - mariadb.org binary distribution
+-- OS do Servidor:               Win64
+-- HeidiSQL Versão:              12.7.0.6850
 -- --------------------------------------------------------
 
---
--- Estrutura para tabela `tbadministrativa`
---
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-DROP TABLE IF EXISTS `tbadministrativa`;
+
+-- Copiando estrutura do banco de dados para bd_lojadoces
+CREATE DATABASE IF NOT EXISTS `bd_lojadoces` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+USE `bd_lojadoces`;
+
+-- Copiando estrutura para tabela bd_lojadoces.tbadministrativa
 CREATE TABLE IF NOT EXISTS `tbadministrativa` (
   `id` int(11) NOT NULL,
   `email` varchar(50) DEFAULT NULL,
@@ -35,92 +27,46 @@ CREATE TABLE IF NOT EXISTS `tbadministrativa` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Despejando dados para a tabela `tbadministrativa`
---
+-- Exportação de dados foi desmarcado.
 
-INSERT INTO `tbadministrativa` (`id`, `email`, `senha`) VALUES
-(1, '123@123.com', '123');
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `tbclientes`
---
-
-DROP TABLE IF EXISTS `tbclientes`;
+-- Copiando estrutura para tabela bd_lojadoces.tbclientes
 CREATE TABLE IF NOT EXISTS `tbclientes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `senha` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Despejando dados para a tabela `tbclientes`
---
+-- Exportação de dados foi desmarcado.
 
-INSERT INTO `tbclientes` (`id`, `nome`, `email`, `senha`) VALUES
-(1, '123123', '123@123.com', '123'),
-(2, 'Bruno', 'bruno@gmail.com', '123'),
-(3, 'bruno', 'bruno123@gmail.com', '123');
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `tbitenspedidos`
---
-
-DROP TABLE IF EXISTS `tbitenspedidos`;
+-- Copiando estrutura para tabela bd_lojadoces.tbitenspedidos
 CREATE TABLE IF NOT EXISTS `tbitenspedidos` (
   `idPedido` int(11) NOT NULL,
   `codProduto` int(11) DEFAULT NULL,
   `qtdProduto` int(11) DEFAULT NULL,
   KEY `FK_CODPRODUTO` (`codProduto`),
-  KEY `FK_PEDIDOS` (`idPedido`)
+  KEY `FK_PEDIDOS` (`idPedido`),
+  CONSTRAINT `FK_CODPRODUTO` FOREIGN KEY (`codProduto`) REFERENCES `tbprodutos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `FK_PEDIDOS` FOREIGN KEY (`idPedido`) REFERENCES `tbpedidos` (`idPedidos`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Despejando dados para a tabela `tbitenspedidos`
---
+-- Exportação de dados foi desmarcado.
 
-INSERT INTO `tbitenspedidos` (`idPedido`, `codProduto`, `qtdProduto`) VALUES
-(1, 1, 2),
-(2, 3, 3),
-(1, 3, 2);
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `tbpedidos`
---
-
-DROP TABLE IF EXISTS `tbpedidos`;
+-- Copiando estrutura para tabela bd_lojadoces.tbpedidos
 CREATE TABLE IF NOT EXISTS `tbpedidos` (
   `idPedidos` int(11) NOT NULL AUTO_INCREMENT,
   `idCliente` int(11) NOT NULL DEFAULT 0,
   `dataPedido` date DEFAULT NULL,
   `status` varchar(50) NOT NULL,
   PRIMARY KEY (`idPedidos`) USING BTREE,
-  KEY `FK_tbpedidos_tbclientes` (`idCliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  KEY `FK_tbpedidos_tbclientes` (`idCliente`),
+  CONSTRAINT `FK_tbpedidos_tbclientes` FOREIGN KEY (`idCliente`) REFERENCES `tbclientes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Despejando dados para a tabela `tbpedidos`
---
+-- Exportação de dados foi desmarcado.
 
-INSERT INTO `tbpedidos` (`idPedidos`, `idCliente`, `dataPedido`, `status`) VALUES
-(1, 1, '2024-05-18', 'aberto'),
-(2, 2, '2024-05-18', 'aberto');
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `tbprodutos`
---
-
-DROP TABLE IF EXISTS `tbprodutos`;
+-- Copiando estrutura para tabela bd_lojadoces.tbprodutos
 CREATE TABLE IF NOT EXISTS `tbprodutos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `NomeProduto` varchar(50) NOT NULL,
@@ -128,36 +74,12 @@ CREATE TABLE IF NOT EXISTS `tbprodutos` (
   `preco` varchar(50) NOT NULL,
   `imagem` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Despejando dados para a tabela `tbprodutos`
---
+-- Exportação de dados foi desmarcado.
 
-INSERT INTO `tbprodutos` (`id`, `NomeProduto`, `quantidade`, `preco`, `imagem`) VALUES
-(1, 'bombom', '12', '12', ''),
-(2, 'ProdutosTest', '1212', '12', ''),
-(3, 'Panetonne Bauduco', '23', '99,99', ''),
-(4, 'Trufa Recheada', '98', '3,90', '');
-
---
--- Restrições para tabelas despejadas
---
-
---
--- Restrições para tabelas `tbitenspedidos`
---
-ALTER TABLE `tbitenspedidos`
-  ADD CONSTRAINT `FK_CODPRODUTO` FOREIGN KEY (`codProduto`) REFERENCES `tbprodutos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `FK_PEDIDOS` FOREIGN KEY (`idPedido`) REFERENCES `tbpedidos` (`idPedidos`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Restrições para tabelas `tbpedidos`
---
-ALTER TABLE `tbpedidos`
-  ADD CONSTRAINT `FK_tbpedidos_tbclientes` FOREIGN KEY (`idCliente`) REFERENCES `tbclientes` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-COMMIT;
-
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
