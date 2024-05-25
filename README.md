@@ -24,7 +24,8 @@ Tela INDEX ADMIN
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/c8fe631d-a2d5-4d96-ab1b-96af24ec27e0)
 
 Listagem de Pedidos
-![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/25c04a17-1d42-4f54-b1de-e450a441529d)
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/086f38cd-5a3a-453d-9634-2be1dee1d9a1)
+
 
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/c6a3c877-01d1-4b28-90d3-545d429195ad)
 
