@@ -9,11 +9,12 @@ Tela de Inicio
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/86784902-4701-43f6-b82c-7e7105ee786c)
 
 Tela de Produtos
-![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/a6ffb7a6-6b36-4220-8de4-d64be931b627)
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/195c284e-cef2-452f-b272-f9b3bb0c9edc)
 
 Tela de Carrinho
-![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/0f22d75d-784f-46ce-a870-72416dd00ada)
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/ed29f5c2-d1e1-4c12-b65e-13be975cea28)
 
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/370bb2ca-be16-49d2-b302-6214d6f9bdea)
 
 Telas Administrativas do Sistema
 
