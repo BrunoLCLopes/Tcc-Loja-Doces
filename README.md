@@ -36,4 +36,5 @@ Listagem de Cliente
 ![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/73cd3d75-a816-44c4-9013-3f190006d40b)
 
 Listagem de Produtos
-![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/54ff367f-04be-44a8-a354-277420e17ff9)
+![image](https://github.com/BrunoLCLopes/Tcc-Loja-Doces/assets/160807716/313e488a-3675-4e34-b2bf-65c148383262)
+
